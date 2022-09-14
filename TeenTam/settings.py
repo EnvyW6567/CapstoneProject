@@ -180,3 +180,6 @@ CORS_ALLOW_HEADERS = (
     'x-csrftoken',
     'x-requested-with',
 )
+
+# append slash
+# APPEND_SLASH=False
