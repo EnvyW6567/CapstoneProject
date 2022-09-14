@@ -1,7 +1,8 @@
 from django.urls import path
+from rest_framework.authtoken import views # Token 
 from . import views
 
-app_name = "users"
+app_name = "account"
 
 urlpatterns = [
     # path('login', views.LoginViewSet.as_view(), name="login"),
@@ -9,4 +10,5 @@ urlpatterns = [
     # path('signin', views.SigninViewSet.as_view(), name="signin"),
     # path('find-email', views.FindEmailViewSet.as_view(), name="find-email"),
     # path('find-password', views.FindPasswordViewSet.as_view(), name="find-password"),
+    # path('api-token-auth/', views.obtain_auth_token)
 ]
