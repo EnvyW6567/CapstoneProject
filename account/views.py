@@ -3,6 +3,8 @@ from rest_framework.views import APIView
 from .models import User
 from django.shortcuts import render 
 from . import token
+
+
 class AccountViewSet(APIView):
     def get(self, request):
         user = User.objects.all().first()
